@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Animation with Shery JS </title>
+</head>
+
+<body>
+    <div id="main">
+
+        <div id="nav">
+            <div class="nleft">
+                <a href="#">home</a>
+                <a href="#">about</a>
+                <a href="#">contact</a>
+                </li>
+            </div>
+            <div class="ncenter">
+
+                <a href="#">PawanMalakar</a>
+            </div>
+            <div class="nright">
+                <a href="#">animationPage</a>
+            </div>
+
+
+        </div>
+        <div id="hero">
+            <div id="sustain">
+                <h1>01.</h1>
+                <h1>Sustainability</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum facere, vitae fugiat pariatur, libero,</p>
+                <div class="sustainImg">
+                    <img src="https://images.pexels.com/photos/11701985/pexels-photo-11701985.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                </div>
+
+            </div>
+            <div id="ephemeral">
+                <div class="heading">
+                    <h1 class="txt">Equilibrium.</h1>
+                    <h1 class="txt">Ephemeral.</h1>
+                </div>
+                <img src="https://images.pexels.com/photos/1279903/pexels-photo-1279903.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                <p class="txt">Commited to Sustainability and Eco-freidly choices for a better tommorow </p>
+            </div>
+            <div id="circle">
+                <i class="ri-arrow-down-circle-line">
+                    Ready for Glory
+                </i>
+            </div>
+        </div>
+        <div id="page2">
+            <div class="pgTitle">our MOtive</div>
+            <div class="pg2text ">
+                <h1>At Sheryians,we are deeply commited to Sustainability. we belive in a greener ,more sustianable future , and it's at the core everyting we do. our practice are disgin with enviromental resposible in mind , from soucring Eco-freidly materaial
+                    to reducing our footprint</h1>
+            </div>
+
+        </div>
+        <div id="page3">
+            <div class="image1 img">
+                <img src="https://images.pexels.com/photos/4908012/pexels-photo-4908012.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+            </div>
+            <div class="image2 img">
+                <img src="https://images.pexels.com/photos/4033329/pexels-photo-4033329.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="">
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <!-- Scroll Trigger is needed for Scroll Effects -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <!-- Three.js is needed for 3d Effects -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+
+    <!-- ControlKit is needed for Debug Panel -->
+    <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/sheryjs/dist/Shery.js"></script>
+    <script>
+        Shery.mouseFollower({
+            //Parameters are optional.
+            skew: true,
+            ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+            duration: 1,
+        });
+        Shery.imageEffect("img", {
+
+                "a": {
+                    "value": 2,
+                    "range": [0, 30]
+                },
+                "b": {
+                    "value": -1,
+                    "range": [-1, 1]
+                },
+                "zindex": {
+                    "value": -9996999,
+                    "range": [-9999999, 9999999]
+                },
+                "aspect": {
+                    "value": 0.9233796861436632
+                },
+                "gooey": {
+                    "value": false
+                },
+                "infiniteGooey": {
+                    "value": false
+                },
+                "growSize": {
+                    "value": 4,
+                    "range": [1, 15]
+                },
+                "durationOut": {
+                    "value": 1,
+                    "range": [0.1, 5]
+                },
+                "durationIn": {
+                    "value": 1.5,
+                    "range": [0.1, 5]
+                },
+                "displaceAmount": {
+                    "value": 0.5
+                },
+                "masker": {
+                    "value": true
+                },
+                "maskVal": {
+                    "value": 5,
+                    "range": [1, 5]
+                },
+                "scrollType": {
+                    "value": 0
+                },
+                "geoVertex": {
+                    "range": [1, 64],
+                    "value": 1
+                },
+                "noEffectGooey": {
+                    "value": true
+                },
+                "onMouse": {
+                    "value": 1
+                },
+                "noise_speed": {
+                    "value": 0.2,
+                    "range": [0, 10]
+                },
+                "metaball": {
+                    "value": 0.2,
+                    "range": [0, 2]
+                },
+                "discard_threshold": {
+                    "value": 0.5,
+                    "range": [0, 1]
+                },
+                "antialias_threshold": {
+                    "value": 0.002,
+                    "range": [0, 0.1]
+                },
+                "noise_height": {
+                    "value": 0.5,
+                    "range": [0, 2]
+                },
+                "noise_scale": {
+                    "value": 10,
+                    "range": [0, 100]
+                }
+            }
+
+        )
+        Shery.textAnimate(".txt" /* Element to target.*/ , {
+            //Parameters are optional.
+            style: 1,
+            y: 10,
+            delay: 0.1,
+            duration: 2,
+            ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+            multiplier: 0.1,
+        });
+        Shery.hoverWithMediaCircle("img" /* Element to target.*/ , {
+            images: ["https://images.pexels.com/photos/12879014/pexels-photo-12879014.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", "https://images.pexels.com/photos/14934612/pexels-photo-14934612.jpeg?auto=compress&cs=tinysrgb&w=1600", "https://images.pexels.com/photos/17038848/pexels-photo-17038848/free-photo-of-river-flowing-in-green-valley.jpeg?auto=compress&cs=tinysrgb&w=1600"] /*OR*/ ,
+            //videos: ["video1.mp4", "video2.mp4"],
+        });
+    </script>
+</body>
+
+</html>
